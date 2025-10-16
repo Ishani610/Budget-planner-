@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💰 Budget Planner</h1>
+            <p>Track your income and expenses with style</p>
+        </div>
+
+        <div class="summary-cards">
+            <div class="card income">
+                <div class="card-header">
+                    <div class="card-title">Total Income</div>
+                    <div class="card-icon">+</div>
+                </div>
+                <div class="card-amount">₹5,420.00</div>
+                <div class="card-change">↗ +12% from last month</div>
+            </div>
+
+            <div class="card expense">
+                <div class="card-header">
+                    <div class="card-title">Total Expenses</div>
+                    <div class="card-icon">-</div>
+                </div>
+                <div class="card-amount">₹3,840.00</div>
+                <div class="card-change">↗ +8% from last month</div>
+            </div>
+
+            <div class="card balance">
+                <div class="card-header">
+                    <div class="card-title">Net Balance</div>
+                    <div class="card-icon">₹</div>
+                </div>
+                <div class="card-amount">₹1,580.00</div>
+                <div class="card-change">💡 Great savings this month!</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <div class="section-header">Recent Income</div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Source</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-09-01</td>
+                                <td>Tech Corp</td>
+                                <td><span class="category salary">Salary</span></td>
+                                <td class="amount income-amount">+₹4,200.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-05</td>
+                                <td>Web Design</td>
+                                <td><span class="category freelance">Freelance</span></td>
+                                <td class="amount income-amount">+₹800.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-10</td>
+                                <td>Stock Dividend</td>
+                                <td><span class="category investment">Investment</span></td>
+                                <td class="amount income-amount">+₹320.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-15</td>
+                                <td>App Sales</td>
+                                <td><span class="category freelance">Freelance</span></td>
+                                <td class="amount income-amount">+₹100.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">Recent Expenses</div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-09-02</td>
+                                <td>Grocery Store</td>
+                                <td><span class="category food">Food</span></td>
+                                <td class="amount expense-amount">-₹120.50</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-03</td>
+                                <td>Gas Station</td>
+                                <td><span class="category transport">Transport</span></td>
+                                <td class="amount expense-amount">-₹65.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-04</td>
+                                <td>Netflix</td>
+                                <td><span class="category entertainment">Entertainment</span></td>
+                                <td class="amount expense-amount">-₹15.99</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-05</td>
+                                <td>Electric Bill</td>
+                                <td><span class="category utilities">Utilities</span></td>
+                                <td class="amount expense-amount">-₹89.75</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-06</td>
+                                <td>Amazon</td>
+                                <td><span class="category shopping">Shopping</span></td>
+                                <td class="amount expense-amount">-₹234.80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section progress-section">
+            <div class="section-header">Monthly Budget Progress</div>
+            <div style="padding: 20px;">
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">🍕 Food & Dining</span>
+                        <span class="progress-value">₹520 / ₹600 (87%)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-food" style="width: 87%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">🚗 Transportation</span>
+                        <span class="progress-value">₹280 / ₹400 (70%)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-transport" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">🎬 Entertainment</span>
+                        <span class="progress-value">₹95 / ₹200 (48%)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-entertainment" style="width: 48%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">⚡ Utilities</span>
+                        <span class="progress-value">₹320 / ₹350 (91%)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-utilities" style="width: 91%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">🛍️ Shopping</span>
+                        <span class="progress-value">₹450 / ₹500 (90%)</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-shopping" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section add-transaction">
+            <div class="section-header">Add New Transaction</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" value="2024-09-04">
+                </div>
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="salary">Salary</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="investment">Investment</option>
+                        <option value="food">Food</option>
+                        <option value="transport">Transport</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="shopping">Shopping</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" name="description" placeholder="Transaction description">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount (₹)</label>
+                    <input type="number" id="amount" name="amount" placeholder="0.00" step="0.01">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Add Transaction</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple form interaction
+        document.querySelector('.btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const form = e.target.closest('.form-row');
+            const inputs = form.querySelectorAll('input, select');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (input.type !== 'submit' && !input.value) {
+                    isValid = false;
+                    input.style.borderColor = '#e74c3c';
+                } else {
+                    input.style.borderColor = '#ecf0f1';
+                }
+            });
+            
+            if (isValid) {
+                alert('Transaction added successfully! 💰');
+                inputs.forEach(input => {
+                    if (input.type !== 'submit' && input.tagName !== 'SELECT') {
+                        input.value = '';
+                    }
+                });
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+
+        // Add hover effects to tables
+        document.querySelectorAll('tbody tr').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(5px)';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+</body>
+</html>
